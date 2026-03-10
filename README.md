@@ -2,7 +2,7 @@
 
 Agent skills for AI-powered audio-visual media creation with [TwoShot](https://twoshot.app).
 
-Give your AI agent the ability to search audio samples, generate music, create videos, clone voices, separate stems, build multi-track projects, and more.
+Give your AI agent the ability to search and download media (samples, videos, images), generate music, create videos, clone voices, separate stems, build multi-track projects, and more.
 
 ## Install
 
@@ -51,7 +51,7 @@ npx skills add twoshotapp/agent-skills/twoshot-voice-audio
 
 ## What TwoShot Can Do
 
-- **Search** thousands of audio samples with BPM, key, tag, and style filters
+- **Search** thousands of samples, videos, and images with BPM, key, tag, and style filters
 - **Generate** music, sound effects, images, and video with AI models
 - **Separate** stems (vocals, drums, bass, instruments) from any audio
 - **Clone voices** and generate speech in any voice from a reference recording

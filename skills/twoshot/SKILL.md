@@ -1,6 +1,6 @@
 ---
 name: twoshot
-description: Connect your AI agent to TwoShot for audio-visual media creation — search audio samples, generate music/video/images, separate stems, clone voices, build multi-track projects, and more. Use when the user needs audio, music, video, image creation or manipulation.
+description: Connect your AI agent to TwoShot for audio-visual media creation — search and download samples, videos and images, generate music/video/images, separate stems, clone voices, build multi-track projects, and more. Use when the user needs audio, music, video, image creation or manipulation.
 ---
 
 # TwoShot

@@ -1,6 +1,6 @@
 ---
 name: twoshot-music-production
-description: AI-powered music production workflows with TwoShot — generate music, find and filter audio samples, separate stems, create mashups and remixes, enhance vocals, and build multi-track studio projects. Use when the user wants to create, edit, or produce music or audio.
+description: AI-powered music production workflows with TwoShot — generate music, find and filter samples, separate stems, create mashups and remixes, enhance vocals, and build multi-track studio projects. Use when the user wants to create, edit, or produce music or audio.
 ---
 
 # Music Production with TwoShot
