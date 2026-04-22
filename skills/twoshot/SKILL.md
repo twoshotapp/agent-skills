@@ -9,16 +9,38 @@ TwoShot is an AI-powered platform for audio-visual media creation. It provides s
 
 ## Setup via MCP (Recommended)
 
-The MCP server gives your agent direct tool access. One-time setup:
+The MCP server gives your agent direct tool access. Server URL: `https://mcp.twoshot.app/`. Authentication is OAuth 2.0 + PKCE (browser-based sign-in on first use).
 
 **Claude Code:**
 ```
-claude mcp add twoshot --transport streamable-http https://mcp.twoshot.app/
+claude mcp add twoshot --transport http https://mcp.twoshot.app/
 ```
 
-**ChatGPT:** Settings > Connected apps > Add > enter `https://mcp.twoshot.app/`
+**Claude Desktop:** Settings → Connectors → Add custom connector → paste `https://mcp.twoshot.app/`.
 
-**Other MCP clients:** Connect to `https://mcp.twoshot.app/` using Streamable HTTP transport. Authentication is OAuth 2.0 + PKCE (browser-based sign-in on first use).
+**ChatGPT:** Settings → Connected apps → Add → `https://mcp.twoshot.app/`.
+
+**Codex CLI:**
+```
+codex mcp add twoshot --transport http https://mcp.twoshot.app/
+```
+Or add to `~/.codex/config.toml`:
+```toml
+[mcp_servers.twoshot]
+url = "https://mcp.twoshot.app/"
+```
+
+**Cursor:** add to `~/.cursor/mcp.json` (or `.cursor/mcp.json` for project scope):
+```json
+{ "mcpServers": { "twoshot": { "url": "https://mcp.twoshot.app/" } } }
+```
+
+**VS Code (GitHub Copilot):** add to `.vscode/mcp.json`:
+```json
+{ "servers": { "twoshot": { "url": "https://mcp.twoshot.app/" } } }
+```
+
+**Other MCP clients:** Connect to `https://mcp.twoshot.app/` via remote HTTP (Streamable HTTP protocol, MCP 2025-11-25).
 
 ## Setup via API (Alternative)
 

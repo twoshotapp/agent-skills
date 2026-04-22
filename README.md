@@ -30,14 +30,15 @@ npx skills add twoshotapp/agent-skills/twoshot-voice-audio
 
 ## Quick Start
 
-1. Connect the TwoShot MCP server to your agent:
+1. Connect the TwoShot MCP server (`https://mcp.twoshot.app/`) to your agent:
 
-   **Claude Code:**
-   ```
-   claude mcp add twoshot --transport streamable-http https://mcp.twoshot.app/
-   ```
-
-   **ChatGPT:** Settings > Connected apps > Add > `https://mcp.twoshot.app/`
+   - **Claude Code:** `claude mcp add twoshot --transport http https://mcp.twoshot.app/`
+   - **Claude Desktop:** Settings → Connectors → Add custom connector → paste the URL
+   - **ChatGPT:** Settings → Connected apps → Add → paste the URL
+   - **Codex CLI:** `codex mcp add twoshot --transport http https://mcp.twoshot.app/`
+   - **Cursor:** add `{ "mcpServers": { "twoshot": { "url": "https://mcp.twoshot.app/" } } }` to `~/.cursor/mcp.json`
+   - **VS Code (Copilot):** add `{ "servers": { "twoshot": { "url": "https://mcp.twoshot.app/" } } }` to `.vscode/mcp.json`
+   - **Other clients:** connect to the URL via remote HTTP (Streamable HTTP protocol)
 
 2. Authenticate when prompted (browser-based sign-in)
 
